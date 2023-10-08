@@ -1,0 +1,106 @@
+/* App.css */
+.app {
+  display: flex;
+  justify-content: space-between;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+.section {
+  width: 50%;
+  padding: 20px;
+  min-height: 50vh;
+}
+
+.section h2 {
+  margin: 0;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.image-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.image-section img {
+  max-width: 100px;
+  max-height: 100px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.folder-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+ button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.folder {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.folder:hover {
+  border-color: #007BFF;
+}
+
+.selected-folder {
+  margin-top: 20px;
+  padding: 10px;
+
+}
+.folder-row{
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+}
+
+.selected-folder h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.selected-folder img {
+  max-width: 100px;
+  max-height: 100px;
+  /* margin-top: 10px; */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 5px;
+}
+.selected_folder_span:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.border{
+  border: 1px solid #000;
+}
+
+@media screen and (max-width: 768px) {
+  .app{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .section{
+    width: 100%;
+    margin: 20px 0;
+    padding: 0;
+  }
+}
